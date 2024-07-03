@@ -1,0 +1,11 @@
+@import "reset";
+@import "./settings/_colors";
+@import "./settings/_fonts.scss";
+
+@import './navigation';
+@import './home';
+
+body{
+    font-family: $font-primary;
+    color: $color-text-dark-gray;
+}
