@@ -1,0 +1,20 @@
+@import "./settings/colors";
+@import "./settings/fonts";
+
+
+.btn{
+    font-family: $font-primary;
+    max-width: 310px;
+    height: 120px;
+    font-size: $font-size-big-button;
+    background: $color-background-white;
+    margin: 10px;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 9px 20px;
+
+    &:hover{
+        border: 2px solid $color-text-dark-gray;
+    }
+}

@@ -1,0 +1,54 @@
+@import "./settings/colors";
+@import "./settings/fonts";
+
+.section__Header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Header__image {
+    max-width: 700px;
+
+    & img {
+        max-width: 890px;
+        position: relative;
+        left: -250px;
+    }
+}
+
+.Header__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--titles{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: $font-size-title;
+    }
+
+    &--title{
+        padding-top: 10px;
+    }
+
+    &--decoration{
+        padding-top: 25px;
+        padding-bottom: 65px;
+    }
+
+    &--btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.btn__primary{
+    margin-right: 40px;
+}
+
+

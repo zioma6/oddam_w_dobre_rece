@@ -1,0 +1,40 @@
+@import "./settings/colors";
+@import "./settings/fonts";
+
+.section__SimpleSteps{
+    margin-bottom: 80px;
+    margin-top: 55px
+}
+
+
+.SimpleSteps {
+    &__titles{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    &__title{
+        font-size: $font-size-title;
+        margin-bottom: 25px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: $color-background-light-grey;
+        padding: 75px 100px;
+    }
+
+    &__buttons{
+        text-align: center;
+        margin-top: 35px;
+    }
+
+}
+
+
+
