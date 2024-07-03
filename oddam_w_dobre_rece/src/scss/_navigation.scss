@@ -1,0 +1,62 @@
+@import "./settings/colors";
+@import "./settings/fonts";
+
+
+/* Navigation.css */
+.navigation__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.navigation__up {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $color-background-white;
+    width: 100%;
+    padding: 10px 140px 10px 10px;
+}
+
+.navigation__up nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation__up button {
+    background-color: $color-background-white;
+    color: $color-text-light-grey;
+    padding: 10px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.navigation__up button:hover {
+    border: 2px solid $color-background-yellow;
+}
+
+.navigation__scroll {
+    padding-right: 140px;
+    width: 100%;
+}
+
+.navigation__scroll nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation__scroll nav a {
+    margin: 10px 0;
+    text-decoration: none;
+    color: $color-text-dark-gray;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 9px 20px;
+
+    &:hover{
+        border: 2px solid $color-text-dark-gray;
+    }
+}

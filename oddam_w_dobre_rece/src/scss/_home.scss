@@ -1,0 +1,11 @@
+/* Home.css */
+.section {
+    padding: 50px;
+    height: 100vh;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.section:nth-child(even) {
+    background-color: #e4e4e4;
+}
