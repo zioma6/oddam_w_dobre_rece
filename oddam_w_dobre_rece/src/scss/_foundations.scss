@@ -1,0 +1,28 @@
+@import "./settings/colors";
+@import "./settings/fonts";
+
+.section__Foundations {
+    padding: 80px 0;
+}
+
+.Foundations {
+    &__titles{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    &__title{
+        font-size: $font-size-title;
+        margin-bottom: 25px;
+    }
+
+    &__tabs{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

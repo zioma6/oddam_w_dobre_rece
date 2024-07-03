@@ -3,6 +3,7 @@ import Header from "./Header";
 import ThreeColumns from "./ThreeColumns";
 import SimpleSteps from "./SimpleSteps";
 import AboutUs from "./AboutUs";
+import Foundations from "./Foundations";
 
 const Home = () => {
     return (
@@ -12,12 +13,10 @@ const Home = () => {
                 <ThreeColumns/>
                 <SimpleSteps/>
                 <AboutUs/>
+                <Foundations/>
 
 
-                <div id="fundacje" className="section">
-                    <h1>Fundacje i organizacje</h1>
-                    <p>Treść sekcji Fundacje i organizacje...</p>
-                </div>
+
 
                 <div id="kontakt" className="section">
                     <h1>Kontakt</h1>

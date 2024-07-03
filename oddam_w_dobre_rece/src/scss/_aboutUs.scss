@@ -2,9 +2,11 @@
 @import "./settings/fonts";
 
 .section__AboutUs{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: $color-background-light-grey;
 }
 
 .AboutUs{
@@ -14,6 +16,9 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 35px;
+        margin-top: 50px;
+        padding: 20px 100px;
+        width: 50%;
     }
 
     &__title{
@@ -23,11 +28,21 @@
 
     &__text{
         text-align: center;
-        max-width: 660px;
-        font-size: 30px;
+        font-size: 25px;
+        line-height: 40px;
+        margin: 30px 0;
+    }
+
+    &__sign{
+        align-items: flex-end;
     }
 
     &__image{
-        max-width: 900px;
+        max-width: 1050px;
+
+        & img{
+            width: 100%;
+        }
     }
+
 }
