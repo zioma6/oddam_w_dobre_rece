@@ -1,0 +1,17 @@
+@import "./settings/colors";
+@import "./settings/fonts";
+
+.MainTitles {
+    &__titles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        font-size: $font-size-title;
+        margin-bottom: 25px;
+    }
+}

@@ -12,7 +12,7 @@ const Header = () => {
             </div>
             <div className="Header__card">
                 <div className="Header__card--titles">
-                    <h1 className="Header__card--title">Zacznij pomagać!</h1>
+                    <h1 className="Header__card--title">Zacznij pomagać! </h1>
                     <h1 className="Header__card--title">Oddaj niechciane rzeczy w zaufane ręce</h1>
                 </div>
                 <img className="Header__card--decoration" src={decoration} alt="decoration"/>

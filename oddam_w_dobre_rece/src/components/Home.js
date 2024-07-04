@@ -4,6 +4,7 @@ import ThreeColumns from "./ThreeColumns";
 import SimpleSteps from "./SimpleSteps";
 import AboutUs from "./AboutUs";
 import Foundations from "./Foundations";
+import Contact from "./Contact";
 
 const Home = () => {
     return (
@@ -14,14 +15,7 @@ const Home = () => {
                 <SimpleSteps/>
                 <AboutUs/>
                 <Foundations/>
-
-
-
-
-                <div id="kontakt" className="section">
-                    <h1>Kontakt</h1>
-                    <p>Treść sekcji Kontakt...</p>
-                </div>
+                <Contact/>
             </div>
         </div>
     );
