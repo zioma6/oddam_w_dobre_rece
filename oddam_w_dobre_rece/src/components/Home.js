@@ -5,6 +5,7 @@ import SimpleSteps from "./SimpleSteps";
 import AboutUs from "./AboutUs";
 import Foundations from "./Foundations";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
                 <AboutUs/>
                 <Foundations/>
                 <Contact/>
+                <Footer/>
             </div>
         </div>
     );

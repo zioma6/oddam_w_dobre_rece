@@ -1,0 +1,40 @@
+@import "./settings/colors";
+@import "./settings/fonts";
+
+.Footer {
+    width: 100%;
+    background-color: $color-background-white;
+    color: $color-text-dark-gray;
+    padding: 10px 0;
+    bottom: 0;
+}
+
+.Footer__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.Footer__text {
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Footer__icons{
+    margin-left: auto;
+}
+
+.Footer__icons a {
+    margin-left: 10px;
+}
+
+.Footer__icons img {
+    width: 24px;
+    height: 24px;
+}

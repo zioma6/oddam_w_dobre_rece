@@ -17,8 +17,8 @@ const Header = () => {
                 </div>
                 <img className="Header__card--decoration" src={decoration} alt="decoration"/>
                 <div className="Header__card--btns">
-                    <Button class_name="Header__card--btn  btn__primary" text="ODDAJ RZECZY" path="/zaloguj"/>
-                    <Button class_name="Header__card--btn btn__secondary" text="ZORGANIZUJ ZBIÓRKĘ" path="/zaloguj"/>
+                    <Button class_name="Header__card--btn  btn__primary" text="ODDAJ RZECZY" path="/logowanie"/>
+                    <Button class_name="Header__card--btn btn__secondary" text="ZORGANIZUJ ZBIÓRKĘ" path="/logowanie"/>
                 </div>
             </div>
         </div>

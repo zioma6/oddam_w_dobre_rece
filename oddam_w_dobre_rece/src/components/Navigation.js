@@ -9,10 +9,10 @@ const Navigation = () => {
         <div className="navigation__container">
             <section className="navigation__up">
                 <nav>
-                    <Link to="/logIn">
+                    <Link to="/logowanie">
                         <button>Zaloguj</button>
                     </Link>
-                    <Link to="/signIn">
+                    <Link to="/rejestracja">
                         <button>Załóż konto</button>
                     </Link>
                 </nav>

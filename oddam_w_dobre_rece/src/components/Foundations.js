@@ -1,5 +1,4 @@
 import React from 'react';
-import decoration from "../assets/images/Decoration.svg";
 import "../scss/_foundations.scss"
 import TabsFoundations from "./TabsFoundations";
 import MainTitle from "./MainTitle";

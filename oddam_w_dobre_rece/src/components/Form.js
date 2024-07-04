@@ -35,22 +35,46 @@ const Form = () => {
             }
         } else if (name === 'message') {
             if (value.trim() === '') {
-                errorMsg = 'Wiadomośc jest wymagana';
+                errorMsg = 'Message is required';
+            } else if (value.trim().length < 120) {
+                errorMsg = 'Wiadomośc musi mieć co najmniej 120 znaków';
             }
         }
         setErrors((prevErrors) => ({ ...prevErrors, [name]: errorMsg }));
     };
 
-    const handleSubmit = (event) => {
+
+    const handleSubmit = async (event) => {
         event.preventDefault();
         const isValid = !Object.values(errors).some((error) => error !== '') &&
             Object.values(formData).every((value) => value.trim() !== '');
         if (isValid) {
-            setSubmitMessage(`Wiadomość wysłana! Dziękujemy za kontakt`);
-            setFormData({ name: '', email: '', message: '' }); // Clear form fields
-            setErrors({ name: '', email: '', message: '' }); // Clear errors
+            try {
+                const response = await fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.status === 'success') {
+                        setSubmitMessage('Wiadomość wysłana! Dziękujemy za kontakt.');
+                        setFormData({ name: '', email: '', message: '' }); // Clear form fields
+                        setErrors({ name: '', email: '', message: '' }); // Clear errors
+                    }
+                } else if (response.status === 400) {
+                    const data = await response.json();
+                    setErrors((prevErrors) => ({ ...prevErrors, ...data.errors }));
+                    setSubmitMessage('Wystąpiły błędy w formularzu. Proszę poprawić.');
+                }
+            } catch (error) {
+                setSubmitMessage('Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie później.');
+            }
         } else {
-            setSubmitMessage('Proszę wpisać poprawne dane');
+            setSubmitMessage('Proszę poprawić błędy w formularzu.');
         }
     };
 

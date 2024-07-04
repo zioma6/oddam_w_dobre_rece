@@ -11,7 +11,6 @@ const Contact = () => {
                     <MainTitle title="Skontaktuj się z nami"/>
                     <Form/>
                 </div>
-
         </div>
     );
 };

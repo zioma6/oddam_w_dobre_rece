@@ -1,0 +1,50 @@
+@import "./settings/colors";
+@import "./settings/fonts";
+
+
+.SignIn{
+    &__section {
+        height: 100hv;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form {
+        max-width: 400px;
+        background: $color-background-light-grey;
+        padding: 45px 65px;
+
+        &--group:first-child {
+            margin-bottom: 25px;
+        }
+        &--group:last-child {
+            margin-top: 25px;
+        }
+    }
+
+    &__button {
+        font-family: $font-primary;
+        font-size: 18px;
+        background: $color-background-white;
+        margin: 40px 100px;
+        font-weight: 300;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 15px 50px;
+        align-self: flex-end;
+        border: none;
+
+        &:hover {
+            border: 2px solid $color-text-dark-gray;
+        }
+    }
+}
+
+input {
+    background: $color-background-light-grey;
+}
+
+

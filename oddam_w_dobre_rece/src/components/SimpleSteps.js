@@ -21,7 +21,7 @@ const SimpleSteps = () => {
                 <Card icon_url={Icon4} title="Zamów kuriera" text="kurier przyjedzie w dogodnym terminie" class_name="card_arrows"/>
             </div>
             <div className="SimpleSteps__buttons">
-               <Button class_name="SimpleSteps__button" text="ODDAJ RZECZY" path="/zaloguj"/>
+               <Button class_name="SimpleSteps__button" text="ODDAJ RZECZY" path="/logowanie"/>
             </div>
         </div>
     );

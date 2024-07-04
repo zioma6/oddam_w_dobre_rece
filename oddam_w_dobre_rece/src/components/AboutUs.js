@@ -1,5 +1,4 @@
 import React from 'react';
-import decoration from "../assets/images/Decoration.svg";
 import sign from "../assets/images/Signature.svg";
 import imagePeople from "../assets/images/People.jpg"
 import "../scss/_aboutUs.scss"
